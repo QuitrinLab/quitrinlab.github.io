@@ -1,7 +1,8 @@
 :root {
-	--main-bckgr: #7ca5f1ce;
+	--main-bckgr: #fff;
+	--artcl-bkgr: #7ca5f1ce;
 	--main-fntfm: Segoe UI, sans-serif;
-	--color-text: #black;
+	--color-text: black;
 	--toolbar-bg: snow;
 	--dropdwn-bg: white;
 	--img-bxshdw: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -17,16 +18,14 @@
 @keyframes alpha {
 	0%  {opacity: 1;}
 	50% {opacity: 0;}
-	100%{opacity: 1;}
-}
+	100%{opacity: 1;}}
 
   .inp {
 	animation: alpha 1.5s infinite;
   }
 
   .headeer {
-	font-size: 16pt;
-	text-align: center;
+	font-size: larger;
   }
 
   .lab {
@@ -66,6 +65,11 @@
 	  margin: 0;
   }
   
+  #content {
+	background-color: var(--artcl-bkgr);
+	margin: 5%;
+  }
+
   html {
 	color: var(--color-text);
 	background: var(--main-bckgr);
@@ -78,6 +82,7 @@
 	text-align:center;
 	overflow: hidden;
 	background-color: var(--toolbar-bg);
+	border-bottom: 1px solid #000000;
   }
   
   .navbar a {
